@@ -1,0 +1,77 @@
+{
+  "id": "com.tapframe.dcaddon",
+  "name": "DC Universe",
+  "description": "Explore the DC Universe by release date, movies, series, and animations!",
+  "version": "1.2.1",
+  "logo": "https://github.com/tapframe/addon-dc/blob/main/assets/icon.png?raw=true",
+  "background": "https://github.com/tapframe/addon-dc/blob/main/assets/background.jpg?raw=true",
+  "catalogs": [
+    {
+      "type": "DC",
+      "id": "dc-chronological",
+      "name": "Chronological Order"
+    },
+    {
+      "type": "DC",
+      "id": "dc-release",
+      "name": "Release Order"
+    },
+    {
+      "type": "DC",
+      "id": "dc-movies",
+      "name": "Movies"
+    },
+    {
+      "type": "DC",
+      "id": "dceu_movies",
+      "name": "DCEU Movies"
+    },
+    {
+      "type": "DC",
+      "id": "dc-series",
+      "name": "Series"
+    },
+    {
+      "type": "DC",
+      "id": "dc_modern_series",
+      "name": "DC Modern Series"
+    },
+    {
+      "type": "DC",
+      "id": "dc-animations",
+      "name": "Animations"
+    },
+    {
+      "type": "DC",
+      "id": "dc-batman-animations",
+      "name": "Batman Animations"
+    },
+    {
+      "type": "DC",
+      "id": "dc-superman-animations",
+      "name": "Superman Animations"
+    },
+    {
+      "type": "DC",
+      "id": "dc-batman",
+      "name": "Batman Collection"
+    },
+    {
+      "type": "DC",
+      "id": "dc-superman",
+      "name": "Superman Collection"
+    }
+  ],
+  "resources": ["catalog"],
+  "types": ["movie", "series"],
+  "idPrefixes": ["dc_"],
+  "behaviorHints": {
+    "configurable": true
+  },
+  "contactEmail": "nayifveliya99@gmail.com",
+
+  "stremioAddonsConfig": {
+    "issuer": "https://stremio-addons.net",
+    "signature": "eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..2TNKOWJrUe7Y9D838FIDfA.i8aMASGnH0eOTpA2ZJEi6ib2Axjh-z8RG--I5XCnH40IjD_enWauU2WU0FwiFdAGjg6e_Uh0Thjkl2R_405M7cSOZib4I1RvKiiCsXn6EBC5GmTJ-W1ZsMaeJGVwXSrF.FBzgXVi9Ih-GRdBozfoglQ"
+  }
+}
