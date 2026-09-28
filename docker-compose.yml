@@ -14,7 +14,7 @@ services:
       - traefik.enable=true
       - traefik.docker.network=proxy
       - traefik.http.routers.addon-dc.rule=Host(`${DOMAIN}`)
-      - traefik.http.routers.addon-dc.entrypoints=websecure
+      - traefik.http.routers.addon-dc.entrypoints=https
       - traefik.http.routers.addon-dc.tls=true
       - traefik.http.routers.addon-dc.tls.certresolver=dns-cloudflare
       - traefik.http.services.addon-dc.loadbalancer.server.port=7777
