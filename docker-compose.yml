@@ -1,0 +1,26 @@
+services:
+  addon-dc:
+    image: ghcr.io/cyb3rgh05t/addon-dc
+    container_name: addon-dc
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      PORT: 7777
+      PUBLIC_URL: ${PUBLIC_URL}
+    networks:
+      - proxy
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=proxy
+      - traefik.http.routers.addon-dc.rule=Host(`${DOMAIN}`)
+      - traefik.http.routers.addon-dc.entrypoints=websecure
+      - traefik.http.routers.addon-dc.tls=true
+      - traefik.http.routers.addon-dc.tls.certresolver=dns-cloudflare
+      - traefik.http.services.addon-dc.loadbalancer.server.port=7777
+
+networks:
+  internal:
+    internal: true
+  proxy:
+    external: true
